@@ -10,14 +10,25 @@ const taskContainerEle = document.querySelector(".taskContainer");
 
 addBtnEle.addEventListener("click" , function() {
     // jo bhi text me likha hai osko task var me store kar leye 
-    let task = inputEle.value;
+    // let task = inputEle.value;
     // console.log(task)
+
+    // deleting spaces 
+    let task = inputEle.value.trim();
+   
+    inputEle.value = ""; // clear inputele ko 
+    if(task.length == 0) {
+        alert("task cannot be empty")
+        return;
+    }
+
 
     let taskEle = document.createElement("div");
     taskEle.classList.add("task");
     // text add + delete button add
     taskEle.innerHTML = `<p>${task}</p>
       <svg
+        id = "delete"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           width="24"
@@ -29,7 +40,16 @@ addBtnEle.addEventListener("click" , function() {
           ></path>
         </svg>`;
 
+         // adding delete functionallity 
+         const deleteButton = taskEle.querySelector("#delete");
+
+         deleteButton.addEventListener("click" , function() {
+            taskContainerEle.removeChild(taskEle);
+         });
+
+
+
     taskContainerEle.appendChild(taskEle);
-    console.log(taskEle)
+    // console.log(taskEle)
 
 })
