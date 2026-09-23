@@ -1,108 +1,100 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 .taskInputs {
-    width: 100vw;
-    height: 10vh;
-    background-color: #315b8c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  width: 100vw;
+  height: 10vh;
+  background-color: #7b0cdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #inputTag {
-    height: 45%;
-    width: 30%;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.completeBnt {
-
+  height: 45%;
+  width: 30%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
 }
 
 #addBtn {
-    height: 45%;
-    width: 5%;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    /* padding: 5px; */
-    background-color: #f2765e;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 45%;
+  width: 5%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1fe60d;
+  color: white;
 }
 
-.completeBnt {
-    height: 45%;
-    padding: 10%;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-    color: darkgreen;
+.completeBtn {
+  height: 45%;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 198, 41);
+  color: white;
 }
 
 .incompleteBtn {
-    height: 45%;
-    padding: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(189, 136, 136);
-    color: green;
+  height: 45%;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 104, 89);
+  color: white;
 }
-
 .taskContainer {
-    height: 90vh;
-    width: 100vw;
-    background-color: #a96f1e;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
+  height: 90vh;
+  width: 100vw;
+  background-color: #906dcd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-
 .task {
-    margin: 10px;
-    height: 8%;
-    width: 50%;
-    outline: none;
-    border: none;
-    padding: 5px;
-    margin-right: 10px;
-    background-color: rgb(24, 113, 46);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 3%;
-    padding-right: 1.5%;
+  margin: 10px;
+  height: 8%;
+  width: 50%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+  background-color: #e91e63;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 1.5%;
 }
 
 .icons {
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
