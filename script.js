@@ -111,6 +111,7 @@ const taskContainerEle = document.querySelector(".taskContainer");
                 taskCompleteBtn.innerHTML = "Complete";
                 taskText.computedStyleMap.textDecoration = "none";
                 taskEle.style.backgroundColor = "#92447f";
+                taskEle.style.order = -1;
               } else {
                 taskCompleteBtn.classList.remove("conpleteBtn")
                 taskCompleteBtn.classList.add("incompleteBtn")
@@ -118,6 +119,7 @@ const taskContainerEle = document.querySelector(".taskContainer");
                 taskText.style.textDecoration = "line-through";
                 taskText.style.textDecorationColor = "red";
                 taskEle.style.backgroundColor = "pink"
+                taskEle.style.order = 1;
               }
               isTaskComplete = !isTaskComplete;
              })
